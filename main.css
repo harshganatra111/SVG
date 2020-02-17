@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31,40,51);
+    overflow: hidden;
+}
+.polymorph{
+    fill: #66fcf1;
+}
+.polymorph2{
+    fill: #66fcf1;
+    display: none;
+}
+#myimage{
+    width: 300px;
+    height: auto;
+     position: fixed;
+    top: 20%;
+    left: 25%; 
+    display: none;
+}
+@media (max-width:1080px){
+    .polymorph{
+        display: none;
+    }
+    .polymorph{
+        display: inline;
+    }
+    #myimage{
+        top: 20%;
+        left: 20%;
+        width: 200px;
+    }
+}

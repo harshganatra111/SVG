@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript">
+        setTimeout(function(){
+            document.getElementById('myimage').style.display = 'block';
+        },2100);
+        </script>
+    <title>GPS Programmers' Lab</title>
+</head>
+<body>
+    
+    <svg viewBox="0 0 215 110" >
+        <polygon class="polymorph" points="215,110 0,110 0,0 47.7,0 215,0 "/>
+    </svg>
+    
+    <script src="anime.min.js"></script>
+    <script>
+                var morphing = anime({
+                    targets: ' .polymorph',
+                    points: [
+                        { value: '215,110 0,110 0,0 47.7,0 67,76' },
+                        { value: '215,110 0,110 0,0 0,0 67,76'}
+                    ],
+                    easing: 'easeOutQuad',
+                    duration: 2000,
+                    loop: false
+                    });
+                    
+    </script>
+    
+    <img src="GPS_Logo.png" class="logo" id="myimage">
+</body>
+</html>
